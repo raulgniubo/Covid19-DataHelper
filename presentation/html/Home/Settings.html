@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Manage Users</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="../../assets/css/dashboardStyle.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+	  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+	  <!-- TODO: Add SDKs for Firebase products that you want to use
+	       https://firebase.google.com/docs/web/setup#available-libraries -->
+	  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="../DashboardPage.html">Go Back</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="../DashboardPage.html">Home</a></li>
+					<li><a href="Patients.html">Patients</a></li>
+					<li><a href="Appointments.html">Appointments</a></li>
+					<li><a href="Results.html">Results</a></li>
+					<li><a href="Symptoms.html">Symptoms</a></li>
+					<li><a href="#">Settings</a></li>
+					<li><a href="../../../index.html">Log Out</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Manage Users</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2>Users - Manage the current users of the system</h2>
+						</header>
+
+						<!-- Form -->
+							<!--<h3>Add Users:</h3> -->
+							<form method="post" action="#">
+								<div class="row gtr-uniform">
+									<div class="col-4 col-8-xsmall">
+										<input type="text" name="patientID" id="usernameTextField" value="" placeholder="Username" />
+									</div>
+									<div class="col-4 col-8-xsmall">
+										<input type="password" name="name" id="passwordTextField" value="" placeholder="Password" />
+									</div>
+									<div class="col-4 col-8-xsmall">
+										<input type="password" name="email" id="masterCodeTextField" value="" placeholder="Master Code" />
+									</div>
+
+									<div class="col-12">
+										<ul class="actions">
+											<!-- <li><input type="button" id="addPatientBtn" value="Add User" class="primary" /></li> -->
+											<li><input type="button" id="getUserBtn" value="Get User" class="primary"/></li>
+											<li><input type="button" id="updateUserBtn" value="Update User" /></li>
+											<li><input type="button" id="deleteUserBtn" value="Delete User" /></li>
+											<li><input type="reset" id="resetBtn" value="Reset" /></li>
+											<li><input type="button" id="refreshTableBtn" value="Refresh Table" class="primary"/></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+							<div class="table-wrapper">
+								<table class="alt" id='dataTable'>
+									<thead>
+										<tr>
+											<th>Username</th>
+											<th>Password</th>
+											<th>Role</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+					</div>
+					<div class="col-6 col-12-medium">
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="../../assets/logic/settingsMain.js"></script>
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main2.js"></script>
+
+	</body>
+</html>

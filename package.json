@@ -1,0 +1,24 @@
+{
+  "name": "covid19-datahelper",
+  "version": "1.0.0",
+  "description": "This Web Application provides a database for users to record their symptoms related to Covid-19, make appointments, and get their test results.",
+  "main": "storage/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node storage/server.js"
+  },
+  "author": "Raul Gutierrez Niubo, Franklin Cano-Kuntz, Aldo Ortega, Kenneth Currier, and Vere Khan",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.6",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.4.1",
+    "module": "^1.2.5",
+    "popups": "^1.1.3"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

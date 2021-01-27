@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Helper Login</title>
+    <link rel="stylesheet" href="../assets/css/loginPageStyle.css">
+
+</head>
+<body>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="../images/fb.png">
+                <img src="../images/tw.png">
+                <img src="../images/gp.png">
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" id="userIDLogin" class="input-field" placeholder="User ID" required>
+                <input type="password" id="passwordIDLogin" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" id="loginTermsAndConditionsCheckBox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button id="loginUserBtn" type="button" class="submit-btn">Log in</button>
+
+            </form>
+
+            <form id="register" class="input-group">
+                <input id="userIDRegister" type="text" class="input-field" placeholder="Create User ID" required>
+                <input id="passwordIDRegister" type="password" class="input-field" placeholder="Create Password" required>
+                <input id="masterCodeRegister" type="password" class="input-field" placeholder="Enter Master Code" required>
+                <input type="checkbox" id="checkboxTermsAndConditions" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="button" id="registerUserBtn" class="submit-btn">Register</button>
+
+            </form>
+
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+      <script src="../assets/js/loginPage.js"></script>
+			<script src="../assets/logic/main.js"></script>
+
+</body>
+</html>

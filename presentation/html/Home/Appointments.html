@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Appointments</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="../../assets/css/dashboardStyle.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+				 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="../DashboardPage.html">Go Back</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="../DashboardPage.html">Home</a></li>
+					<li><a href="Patients.html">Patients</a></li>
+					<li><a href="#">Appointments</a></li>
+					<li><a href="Results.html">Results</a></li>
+					<li><a href="Symptoms.html">Symptoms</a></li>
+					<li><a href="Settings.html">Settings</a></li>
+					<li><a href="../../../index.html">Log Out</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Appointments - Add / Edit</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2>Appointments - People who want to get tested</h2>
+						</header>
+						<!-- <p>Add / Edit Patients as Needed:</p> -->
+						<!-- Form -->
+							<h3>Add Appointments:</h3>
+							<form method="post" action="#">
+								<div class="row gtr-uniform">
+									<!-- <div class="col-4 col-8-xsmall">
+										<input type="text" name="patientID" id="patientID" value="" placeholder="Patient ID" />
+									</div> -->
+									<div class="col-4">
+										<select name="category" id="category">
+											<option value="">- Select Patient ID -</option>
+
+										</select>
+									</div>
+									<div class="col-4 col-8-xsmall">
+										<input type="text" name="name" id="appointmentDate" value="" placeholder="Appointment Date (mm/dd/yyyy)" />
+									</div>
+									<div class="col-4 col-8-xsmall">
+										<input type="text" name="email" id="appointmentTime" value="" placeholder="Time (8:00 AM)" />
+									</div>
+
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="button" value="Add Appointment" id="addAppointmentBtn" class="primary" /></li>
+											<li><input type="button" id="getAppointmentBtn" value="Get Appointment" /></li>
+											<li><input type="button" id="updateAppointmentBtn" value="Update Appointment" /></li>
+											<li><input type="button" id="deleteAppointmentBtn" value="Delete Appointment" /></li>
+											<li><input type="reset" id="resetBtn" value="Reset" /></li>
+											<li><input type="reset" class="primary" value="Refresh Table" id="refreshTableBtn" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+						<!-- Table -->
+							<div class="table-wrapper">
+								<table class="alt" id="dataTable">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Appointment Date</th>
+											<th>Time Scheduled</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+					</div>
+					<div class="col-6 col-12-medium">
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="../../assets/logic/appointmentsMain.js"></script>
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main2.js"></script>
+
+	</body>
+</html>

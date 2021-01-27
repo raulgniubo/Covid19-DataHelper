@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Covid 19 Data Helper - Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="../assets/css/dashboardStyle.css" />
+		<script src="https://kit.fontawesome.com/46e2684561.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="#">Covid 19 - Data Helper</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="#">Home</a></li>
+					<li><a href="Home/Patients.html">Patients</a></li>
+					<li><a href="Home/Appointments.html">Appointments</a></li>
+					<li><a href="Home/Results.html">Results</a></li>
+					<li><a href="Home/Symptoms.html">Symptoms</a></li>
+					<li><a href="Home/Settings.html">Settings</a></li>
+					<li><a href="../../index.html">Log Out</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1>Covid 19 - Data Helper</h1>
+					<p>Here is the dashboard where you can select what you want to do.<br />
+				</div>
+			</section>
+
+		<!-- Highlights -->
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>DASHBOARD</h2>
+					</header>
+					<div class="highlights">
+						<section>
+							<div class="content" onclick="window.location.href = 'Home/Patients.html';">
+								<header>
+									<a href="Home/Patients.html" class="fas fa-user-nurse"><span class="label"></span></a>
+									<h3>Patients</h3>
+								</header>
+								<p>Add, edit, or delete any patient from the database (ID Number, Full Name, and Symptoms required to add any patients).</p>
+							</div>
+						</section>
+						<section>
+							<div class="content" onclick="window.location.href = 'Home/Appointments.html';">
+								<header>
+									<a href="Home/Appointments.html" class="far fa-calendar-check"><span class="label"></span></a>
+									<h3>Appointments</h3>
+								</header>
+								<p>Create, edit, or delete appointments for the patients if they want to get tested for Covid-19.</p>
+							</div>
+						</section>
+						<section>
+							<div class="content" onclick="window.location.href = 'Home/Results.html';">
+								<header>
+									<a href="Home/Results.html" class="fas fa-star-half-alt"><span class="label"></span></a>
+									<h3>Results</h3>
+								</header>
+								<p>Check the results of the tests for the patients.</p>
+							</div>
+						</section>
+						<section>
+							<div class="content" onclick="window.location.href = 'Home/Symptoms.html';">
+								<header>
+									<a href="Home/Symptoms.html" class="fas fa-head-side-cough"><span class="label"></span></a>
+									<h3>Symptoms</h3>
+								</header>
+								<p>See all the symptoms for Covid-19 to keep everyone informed, or add new ones.</p>
+							</div>
+						</section>
+						<!--
+						<section>
+							<div class="content">
+								<header>
+									<a href="#" class="far fa-clipboard"><span class="label"></span></a>
+									<h3>Notes</h3>
+								</header>
+								<p>Create, edit, or delete notes related to the Covid-19 pandemic to keep everyone informed.</p>
+							</div>
+						</section>
+						-->
+						<section>
+							<div class="content" onclick="window.location.href = 'Home/Settings.html';">
+								<header>
+									<a href="#" class="fas fa-cogs"><span class="label"></span></a>
+									<h3>Manage Users</h3>
+								</header>
+								<p>Manage Users of the Web-App.</p>
+							</div>
+						</section>
+						
+					</div>
+				</div>
+			</section>
+			
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/dashboardJS.js"></script>
+
+	</body>
+</html>

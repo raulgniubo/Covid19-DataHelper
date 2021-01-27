@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Results</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="../../assets/css/dashboardStyle.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+				 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="../DashboardPage.html">Go Back</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="../DashboardPage.html">Home</a></li>
+					<li><a href="Patients.html">Patients</a></li>
+					<li><a href="Appointments.html">Appointments</a></li>
+					<li><a href="#">Results</a></li>
+					<li><a href="Symptoms.html">Symptoms</a></li>
+					<li><a href="Settings.html">Settings</a></li>
+					<li><a href="../../../index.html">Log Out</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Check Results</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2>Results for the Covid-19 Test:</h2>
+						</header>
+						<!-- <p>Add / Edit Patients as Needed:</p> -->
+
+						<!-- Form -->
+							<h3>Set or Get the Results:</h3>
+							<form method="post" action="#">
+								<div class="row gtr-uniform">
+									<!-- <div class="col-4 col-8-xsmall">
+										<input type="text" name="patientID" id="patientID" value="" placeholder="Patient ID" />
+									</div> -->
+									<div class="col-6">
+										<select name="category" id="category">
+											<option value="">- Select Patient ID -</option>
+
+										</select>
+									</div>
+									<div class="col-6">
+
+									</div>
+
+									<div class="col-2 col-6-small">
+										<input type="radio" id="radio-alpha" name="radio" checked>
+										<label for="radio-alpha">Positive</label>
+									</div>
+									<div class="col-2 col-6-small">
+										<input type="radio" id="radio-beta" name="radio">
+										<label for="radio-beta">Negative</label>
+									</div>
+									<div class="col-2 col-6-small">
+										<input type="radio" id="radio-gamma" name="radio">
+										<label for="radio-gamma">Pending</label>
+									</div>
+
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="button" id="addResultBtn" value="Add Result" class="primary" /></li>
+											<li><input type="button" id="getResultBtn" value="Get Result" /></li>
+											<li><input type="button" id="updateResultBtn" value="Update Result" /></li>
+											<li><input type="button" id="deleteResultBtn" value="Delete Result" /></li>
+											<li><input type="reset" id="resetBtn" value="Reset" /></li>
+											<li><input type="button" id="refreshTableBtn" value="Refresh Table" class="primary" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+						<!-- Table -->
+							<div class="table-wrapper">
+								<table class="alt" id="dataTable">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Appointment Date</th>
+											<th>Test Result</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+					</div>
+					<div class="col-6 col-12-medium">
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="../../assets/logic/resultsMain.js"></script>
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main2.js"></script>
+
+	</body>
+</html>
